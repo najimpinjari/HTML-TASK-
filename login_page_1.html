@@ -2,32 +2,42 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>DOCUMENT</title>
-    <link rel="stylesheet" href="login page 2.css"
+    <title>vhaash</title>
+    <link rel="stylesheet" href="login page 2.css">
 </head>
 <body>
-    <img src="image/logo.png"/>
-    <div class="textbox">
-        <h1>
-        VHaaSh Technologies Private Limited 
-        </h1>
-        <br />
-        <br />
-        <h2>
-            IT Company Located In Pune.<br />
-            Working on Microsoft Technologies based <br />
-            web and mobile applications
-        </h2>
-    </div>
-    
-    <div class="container">
-        <div class="form">
-            <input type="text" class="text" placeholder="Enter Your Mail" /><br />
-            <input type="text" class="text" placeholder="Enter Password" /> <br />
-            <button>
-                Log In
-            </button>
+    <img src="image/logo.png" />
+    <h2 id="h2">
+        VHaaSh Technologies Private Limited
+    </h2>
+    <br />
+
+    <h2 id="h1">
+        IT Company Located In Pune.<br />
+        Working on Microsoft Technologies based <br />
+        web and mobile applications
+    </h2>
+
+    <div class="login-container">
+        <div class="login-form">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <br />
+            </div>
+            <button type="submit">Login</button>
+        </div>
+        <div class="links-container">
+            <a href="#">Forget Password</a>
+            <hr />
+            <button>Register</button>
         </div>
     </div>
+
+
 </body>
 </html>

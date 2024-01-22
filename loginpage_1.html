@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VHaaSh_Tech</title>
+    <link rel="stylesheet" href="VHaaSh_Tech.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #maindivi {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo img {
+            height: 10%;
+            top: 10%;
+            left: 10%;
+            right: 10;
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        #description {
+            margin-left: 20px;
+        }
+
+        #title h2 {
+            max-height: 73px;
+            margin-top: 20px;
+        }
+
+        #disc h2 {
+            max-height: 73px;
+            margin-top: 20px;
+        }
+
+        #form {
+            margin-right: 20px;
+        }
+
+        .login-container {
+            border: 3px double #333;
+            width: 300px;
+            height: auto;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .links-container {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="maindivi">
+        <div id="logo">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMrJ0blLO7jSuOH_Fbt2K4v4cu4qWu09QFQw34=s1360-w1360-h1020" alt="VHaaSh_Tech">
+        </div>
+        <div id="description">
+            <div id="title">
+                <h2>VHaaSh Technologies Private Limited</h2>
+                <br>
+                <br>    
+            </div>
+            <h2 id="disc">
+                IT Company Located In Pune.<br />
+                Working on Microsoft Technologies based <br />
+                web and mobile applications
+            </h2>
+        </div>
+    </div>
+
+    <div id="form">
+        <div class="login-container">
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit">Login</button>
+                <div class="links-container">
+                    <a href="#">Forget Password</a>
+                    <button>Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VHaaSh_Tech</title>
+    <link rel="VHaaSh_Tech" href="VHaaSh_Tech.css">
+    <style>
+
+*
+{
+ margin: 0;
+ padding: 0%;
+ box-sizing: border-box;
+ font-family: 'Poppins' , sans-serif;
+}
+#title {
+            max-height: 73px;
+            margin-top: 110px;
+            margin-left: 102px;
+        }
+title.container
+ {
+          justify-content: space-between;
+}
+#disc
+{
+         max-height: 73px;
+            margin-top: 110px;
+            margin-left: 102px;
+ }
+login-container 
+{
+            border: 3px double #333;
+            width: 24%;
+            height: 30px;
+            margin-bottom: 15px;
+            margin-left: 640px;
+            margin-top: -187px;
+            display: flex;
+            align-items: inherit;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imjbx
+{
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+section .imjbx:before
+{
+    content:'' ;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    background:linear-gradient(225deg,#e91ee9,#03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+
+}
+
+section .imjbx
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+</style>
+</head>
+<body>
+
+     <div id="maindivi">
+        <div id="logo">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMrJ0blLO7jSuOH_Fbt2K4v4cu4qWu09QFQw34=s1360-w1360-h1020" alt="VHaaSh_Tech">
+        </div>
+        <div id="description">
+            <div id="title">
+           <h2>VHaaSh Technologies Private Limited</h2>
+            </div>
+            <h2 id="disc">
+                IT Company Located In Pune.<br />
+                Working on Microsoft Technologies based <br />
+                web and mobile applications
+            </h2>
+        </div>
+
+     </div>
+        <div>
+            <div id="form">
+                <div class="login-container">
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" placeholder="Enter your password">
+                        </div>
+                        <button type="submit">Login</button>
+                        <div class="links-container">
+                            <a href="#">Forget Password</a>
+                            <button>Register</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html> -->

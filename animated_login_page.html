@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Page</title>
+    <style>
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(163, 158, 239, 0.5);
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipORxIcDQZTp-2K5bPB56X0KJxFN5XyrhkFB-00=s1360-w1360-h1020);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper
+ {
+    display: flex;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.3);
+    padding: 60px;
+    align-items: center;
+    overflow: hidden;   
+}
+
+.mcontainer {
+    width: 50%;
+    height: 40px;
+    display:inline-block;
+}
+
+
+.main {
+    width: 50%;
+    height: 40px;
+    color: #f2f2f2;
+    font-size: 14px;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-right: 20px;
+    max-height: 50px;
+    margin-top: -82px;
+    margin-left: -6px;
+    align-items: center;
+    max-height: 94px;
+}
+
+/* .title {
+    /* Center align the content */
+} */
+.title.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 448px;
+    height: 107px;
+    font-size: 16px;
+    color: #f2f2f2;
+    margin-top: -109px;
+    margin-bottom: 522px;
+    margin-left: 20px;
+    margin: 10px 0;
+    margin: 20px auto;
+}
+
+.dis {
+    width: 332px;
+    height: 107px;
+    color: #f2f2f2;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin: 10px 0;
+    
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-box input,.input-box-icon {
+    width: 83%;
+    height: 33px; /* Adjust as needed */
+    background: transparent;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #2d1d91;
+    padding: 0 20px 0 40px;
+}
+
+.input-box input::placeholder {
+    color: #f2f2f2;
+}
+
+.forgot-pass {
+    margin: -15px 0 15px 15px;
+}
+
+.forgot-pass a {
+    color: #f2f2f2;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px; /* Adjust as needed */
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #54880e;
+    font-weight: 200;
+}
+
+.sign-link {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 25px 0 ;
+}
+
+.sign-link p {
+    color: #f2f2f2;
+}
+
+.sign-link p a:hover {
+    text-decoration: underline;
+}
+
+.dont {
+    color: #f2f2f2;
+}
+
+.re {
+    color: #f9f9f9;
+}
+.login
+{
+    color: #f2f2f2;
+}
+
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            border-radius: 50px;
+            box-shadow: 0 0 60px rgba(255, 255, 255, 0.3);
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;   
+        }
+        b
+        /* .mcontainer
+        {
+            height: 0%;
+            width: 0%;
+            bottom: 0%;
+            top: 10%;
+            left: 0%;
+            right: 20%;
+            text-align: center;
+
+        } */
+        /* .main
+        {
+            height: 0%;
+            width: 0%;
+            bottom: 0%;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+        }
+        .dis
+        {
+            height: 0%;
+            width: 0%;
+            bottom: 0%;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+        } */
+
+        /* .wrapper img
+        {
+            position: absolute;
+            right: -61px;
+            bottom: 182px;
+            width: 40%;
+            left: 52%;
+            height: 17%;
+            top: 23%;
+        } */
+        /* .wrapper .text-right
+        {
+            position: absolute;
+            top: 60px;
+            right: 180px;
+            color: #f2f2f2;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            font-size: 50px;
+            user-select: none;
+        } */
+        /* h2
+        {
+            font-size: -17.7px;
+            text-align: center;
+            color: #f2f2f2;
+        }
+
+        .input-box {
+            position: relative;
+            width: 320px;
+            margin: 30px 0;
+        }
+
+        .input-box input {
+            width: 102%;
+            height: 11%;
+            background: transparent;
+            border-radius: 40px;
+            font-size: -3cm;
+            color: #f2f2f2;
+            padding: 0 20px 0 40px;
+        }
+
+        .input-box input::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .input-box-icon
+        {
+            width: 82%;
+            height: -235%;
+            background: transparent;
+            border-radius: 40px;
+            color: #f2f2f2;
+            padding: 0 20px 0 40px;
+        }
+        .forgot-pass
+        {
+            margin:-15px 0 15px 15px;   
+        }
+        .forgot-pass a
+        {
+            color: #f2f2f2;
+            font-size: -3.1cm;
+            text-decoration: none;
+        }
+        .forgot-pass a:hover
+        {
+            text-decoration: underline;
+        }
+        button
+        {
+            
+            width: 99%;
+            height: 52%;
+            background-color: #f2f2f2;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: -3cm;
+            color: #54880e;
+            font-weight: 200;
+        }
+        .sign-link
+        {
+            font-size: .9em;
+            text-align: center;
+            margin: 25px 0 ;
+        }
+        .sign-link p
+        {
+            color: #f2f2f2;
+        }
+        .sign-link p a:hover
+        {
+            text-decoration: underline;
+        }
+        .dont
+        {
+            color: #f2f2f2;
+        }
+        .re
+        {
+            color: #f9f9f9;
+        } */ */
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+       <div class=" mcontainer">
+        <div class="main">
+            <h1 class="title">VHaaSh Technologies Private Limited</h1>
+        </div>
+        <br>
+        <br>
+        <br>    
+        <div class="dis">
+            <h3>
+                IT Company Located In Pune.<br />
+                Working on Microsoft Technologies based <br />
+                web and mobile applications
+            </h3>
+        </div>
+       </div>
+        <div class="form-wraper-login">
+            <form action="">
+                <h2 class="login">Login</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="document-lock-sharp"></ion-icon></span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="forgot-pass">
+                    <br>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit">Login</button>
+                <div class="sign-link"></div>
+                <p class="dont">Don't have an Account ?  <a class="re" href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

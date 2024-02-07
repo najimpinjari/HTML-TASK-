@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body>
+    <h1 class="yellow" name="hed">selectors task</h1>
+    <input type="button" value="click me" id="btn" />
+
+    <p class="yellow">first Paragraph</p>
+    <p class="yellow" name="second">second paragraph</p>
+    <p>third Paragraph</p>
+    <div>
+        <p>inner paragraph</p>
+        <p class="yellow" name="second"></p>
+    </div>
+    <table border="1">
+        <tr>
+            <td>101</td>
+            <td>vishal</td>
+            <td>pune</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>ganesh</td>
+            <td>mumbai</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>radhe</td>
+            <td>nasik</td>
+        </tr>
+    </table>
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            $('#btn').click(function () {
+                //    $('.yellow').css('background-color', 'red');
+                //$('p.yellow').css('background-color', 'red');
+                //    $('div p ').css('background-color', 'red');
+                //$('p:first').css('background-color', 'red');
+                //    $('p:eq(1)').css('background-color', 'red');
+                //$('p:').css('background-color', 'red');
+                //$('*').css('background-color', 'yellow');
+                //  $('[name="hed"]').css('background-color', 'yellow');
+                $('tr:odd').css('background-color', 'yellow');
+              //  $('tr:even').css('background-color', 'yellow');
+
+
+            });
+        });
+    </script>
+</body>
+</html>

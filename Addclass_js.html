@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1, h2, p").addclass("blue");
+                $("div").addclass("important");
+            });
+        });
+    </script>
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+
+    <p>this is a paragraph.</p>
+    <p>this is another paragraph.</p>
+
+    <div>this is some important text!</div><br>
+
+    <button>add classes to elements</button>	'
+
+</body>
+</html>

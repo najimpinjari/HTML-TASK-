@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Select Two library task</h1>
+
+    <table>
+        <tr>
+            <td>City</td>
+            <td>
+                <select id="city" style="160px;" multiple>
+                    <option>--select city--</option>
+                    <option>pune</option>
+                    <option>satara</option>
+                    <option>nasik</option>
+                    <option>mumbai</option>
+                    <option>thane</option>
+                    <option>sangli</option>
+                    <option>dhule</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+
+        $(function () {
+            $('#city').select2();
+        });
+
+    </script>
+</body>
+</html>

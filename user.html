@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Api to fetch users</title>
+</head>
+<h1>Api to fetch users</h1>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th><th>name</th><th>username</th><th>email</th>
+            </tr>
+        </thead>
+        <tbody id="users"></tbody>
+    </table>
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/users',
+                type: 'get',
+                success: function (responce) {
+                   // alert('call success');
+                   // console.log(responce);
+                    var trs = '';   
+                    for (var u of responce) {
+                        trs += `<tr>
+                        <td>${u.id}</td>
+                        <td>${u.name}</td>
+                        <td>${u.username}</td>
+                        <td>${u.email}</td>
+                        </tr>`;
+                    }$('#users').html(trs);
+                },
+                error: function (error) {
+                    alert('call faild');
+                }
+            })
+        });
+    </script>
+</body>
+</html>

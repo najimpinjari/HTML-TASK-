@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>user location</title>
+</head>
+<body>
+    <h1>getiing user location</h1>
+
+    <button id="get-location-button"> Get Location</button>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+        const button = document.getElementById('get-location-button');
+
+        async function getdata(lat,long) {
+            const promise = await fetch( `http://api.weatherapi.com/v1/current.json`
+
+            );
+            return await promise.json();
+        }
+
+        function gotlocation(position) {
+          //  alert(position);
+            console.log(position);
+        }
+
+        function faildtoget() {
+            alert('there was some issue');
+        }
+
+        button.addEventListener('click', async () => {
+            const result = navigator.geolocation.getCurrentPosition(gotlocation, faildtoget)
+        });
+    </script>
+</body>
+</html>

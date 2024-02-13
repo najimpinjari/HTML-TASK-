@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Type Detector</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#getDeviceBtn").click(function () {
+                var deviceType = getDeviceType();
+                alert("You are using a " + deviceType + ".");
+            });
+        });
+
+        function getDeviceType() {
+            var screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                return "mobile";
+            } else if (screenWidth < 992) {
+                return "tablet";
+            } else {
+                return "desktop";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Device Type Detector</h1>
+    <button id="getDeviceBtn">Get My Device Type</button>
+    <p id="deviceType"></p>
+</body>
+</html>

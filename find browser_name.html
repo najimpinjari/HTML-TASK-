@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Name</title>
+</head>
+<body>
+    <h1>find Browser Name</h1>
+    <button id="getBrowserBtn">Get My Browser Name</button>
+    <p id="browserName"></p>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#getBrowserBtn").click(function () {
+                var browserName = getBrowserName();
+                $("#browserName").text("You are using " + browserName + " browser.");
+            });
+        });
+
+        function getBrowserName() {
+            var userAgent = window.navigator.userAgent;
+            var browsers = {
+                'Chrome': /chrome/i,
+                'Firefox': /firefox/i,
+                'Safari': /safari/i,
+                'Opera': /opera/i,
+                'IE': /MSIE|Trident/i,
+                'Edge': /edge/i
+            };
+            for (var key in browsers) {
+                if (browsers[key].test(userAgent)) {
+                    return key;
+                }
+            }
+            return 'Unknown';
+        }
+
+    </script>
+</body>
+</html>

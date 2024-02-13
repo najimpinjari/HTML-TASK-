@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Type & IP Address Detector</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#getDataBtn").click(function () {
+                getDeviceType();
+                getIPAddress();
+            });
+        });
+
+        function getDeviceType() {
+            var screenWidth = window.innerWidth;
+            if (screenWidth < 768) {
+                $("#deviceType").text("You are using a mobile device.");
+            } else if (screenWidth < 992) {
+                $("#deviceType").text("You are using a tablet device.");
+            } else {
+                $("#deviceType").text("You are using a desktop device.");
+            }
+        }
+
+        function getIPAddress() {
+            $.get("https://ipinfo.io", function (response) {
+                $("#ipAddress").text("Your IP address is: " + response.ip);
+            }, "json");
+        }
+    </script>
+</head>
+<body>
+    <h1>Device Type & IP Address Detector</h1>
+    <button id="getDataBtn">Get Device Type & IP Address</button>
+    <p id="deviceType"></p>
+    <p id="ipAddress"></p>
+</body>
+</html>

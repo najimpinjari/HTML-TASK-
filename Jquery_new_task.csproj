@@ -16,7 +16,8 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44354</IISExpressSSLPort>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -67,17 +68,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Addclass_js.html" />
+    <Content Include="bootstrap_3.html" />
+    <Content Include="Casceded_Dropdown.html" />
+    <Content Include="current_location.html" />
+    <Content Include="Datatable net library.html" />
+    <Content Include="device name.html" />
+    <Content Include="filtering.html" />
+    <Content Include="find browser_name.html" />
+    <Content Include="find ip addresss.html" />
     <Content Include="Getsetcontent.html" />
     <Content Include="HtmlPage_for_jquery_.html" />
+    <Content Include="image\2023 Ford Mustang Car aesthetic _ Cool cars _ car wallpapers.jpg" />
+    <Content Include="image\car tattoo_car aesthetic_car tattoo design_car wallpapers__luxury car interior_car aesthetics.jpg" />
+    <Content Include="image\download.jpg" />
+    <Content Include="image\Heelz-n-Hoz.jpg" />
+    <Content Include="image\ybearoutput-300x225.png" />
+    <Content Include="move image anywhere on page.html" />
     <Content Include="new_content.html" />
     <Content Include="scripts\jquery.min.js" />
+    <Content Include="select2lib.html" />
     <Content Include="Selectors.html" />
+    <Content Include="sendemail.html" />
+    <Content Include="user.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="image\636d138ff5877200181c4494.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -101,7 +121,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56707</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44354/</IISUrl>
+          <IISUrl>http://localhost:44356/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

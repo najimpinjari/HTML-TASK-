@@ -16,13 +16,61 @@
 
         <br /> <br />
 
-        <ul class="pagination">
-            <li class="page-item disabled"><a href="#" class="page-link">privius</a></li>
-            <li class="page-item"><a href="#" class="page-link">1</a></li>
-            <li class="page-item active"><a href="#" class="page-link">2</a></li>
-            <li class="page-item"><a href="#" class="page-link">3</a></li>
-            <li class="page-item"><a href="#" class="page-link">next</a></li>
-        </ul>
+        <ul class="pagination justify-content-center">
+        <li class="page-item disabled"><a href="#" class="page-link">privius</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item active"><a href="#" class="page-link">5</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">next</a></li>
+    </ul>
+    <ul class="pagination justify-content-end">
+        <li class="page-item disabled"><a href="#" class="page-link">privius</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item active"><a href="#" class="page-link">5</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">next</a></li>
+    </ul>  <ul class="pagination justify-content-start">
+        <li class="page-item disabled"><a href="#" class="page-link">privius</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item active"><a href="#" class="page-link">5</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">next</a></li>
+    </ul>
+        <hr />
+
+        <h3>menu</h3>
+    <ul class="list-group w-50">
+        <li class="list-group-item">tea</li>
+        <li class="list-group-item">coffee</li>
+        <li class="list-group-item">milk</li>
+    </ul>
+
+        <div class="row">
+            <div class="card-header bg-success text-black col-3">
+                <div class="card-title">
+                    <img src="image/car tattoo_car aesthetic_car tattoo design_car wallpapers__luxury car interior_car aesthetics.jpg" class="card-img-top">
+                    <h3>Mastang</h3>
+                    <span>Gt</span>
+                </div>
+            </div>
+            <div class="card col-6">
+                <div class="card-body">
+                    <img src="image/Heelz-n-Hoz.jpg" class="card-img-top">
+                    <h3>Mastang</h3>
+                    <span>Gt</span>
+                </div>
+            </div>
+            <div class="card col-9">
+                <div class="card-body">
+                    <img src="image/2023 Ford Mustang Car aesthetic _ Cool cars _ car wallpapers.jpg" class="card-img-top">
+                    <h3>Mastang</h3>
+                    <span>Gt</span>
+                </div>
+            </div>
+        </div>
 
 
     </div>
@@ -35,8 +83,33 @@
 
 
     <script>
+        $(function () {
+            $('li.page-item').click(function () {
 
+                var newline = $('li.active').text();
+                alert(newline);
 
+                $(this).siblings().removeclass('active');
+                $(this).addclass('active');
+            });
+        });
+        $(document).ready(function () {
+            $('li.page-item').click(function () {
+                $(this).siblings().removeclass('active');
+                $(this).addclass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('li.page-item').click(function () {
+
+                var newline = $ ('li.active').text();
+                alert(newline);
+
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+        });
 
     </script>
 
